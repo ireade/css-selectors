@@ -58,3 +58,26 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+
+/* Styles */
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.6rem;
+	line-height: 1.4;
+	
+}
+
+.container {
+	margin: 2rem auto;
+	width: 80%;
+}
+
+p {
+	margin: 1rem 0;
+}
+

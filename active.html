@@ -2,29 +2,37 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>CSS Selectors</title>
+	<title>:active</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
 	<link rel="stylesheet" href="reset.css">
 
 	<style>
 
+		.foo .bar {
+			background-color: yellow;
+		}
+
+		.foo:active + .bar {
+			background-color: pink;
+		}
 
 	</style>
 </head>
 <body>
- 
-	<div class="container">
-		
-		<h1>CSS Selectors</h1>
 
-		<ul>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-		</ul>
+	<div class="container">
+
+		<div class="foo">
+			<a href="">Hello</a>
+		</div>
+		<div class="bar">
+			There!
+		</div>
+		
 	</div>
+
+	
 
 </body>
 </html>

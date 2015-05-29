@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>:lang</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="reset.css">
+
+	<style>
+
+		p {
+			position: relative;
+		}
+
+		*:lang(ar) {
+			font-family: "Traditional Arabic";
+		}
+
+		*:lang(fr):before {
+			position: absolute;
+			top: 0;
+			left: -70px;
+			padding: 0.2rem 0.5rem; 
+
+			content: "French";
+
+			font-style: italic;
+
+			/*transform: rotate(90deg);*/
+
+			background-color: beige;
+		}
+
+
+
+	</style>
+</head>
+<body>
+
+<div class="container">
+	
+
+<article>
+	
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum id fugiunt, re eadem defendunt, quae Peripatetici, verba. Videsne, ut haec concinant? At iam decimum annum in spelunca iacet. Duo Reges: constructio interrete. Sed quid sentiat, non videtis. Aliter enim nosmet ipsos nosse non possumus. Quid turpius quam sapientis vitam ex insipientium sermone pendere? Piso, familiaris noster, et alia multa et hoc loco Stoicos irridebat: Quid enim?</p>
+
+
+	<p lang="fr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum id fugiunt, re eadem defendunt, quae Peripatetici, verba. Videsne, ut haec concinant? At iam decimum annum in spelunca iacet. Duo Reges: constructio interrete. Sed quid sentiat, non videtis. Aliter enim nosmet ipsos nosse non possumus. Quid turpius quam sapientis vitam ex insipientium sermone pendere? Piso, familiaris noster, et alia multa et hoc loco Stoicos irridebat: Quid enim?</p>
+
+
+	<p lang="ar">اهلا وسهلا</p>
+
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum id fugiunt, re eadem defendunt, quae Peripatetici, verba. Videsne, ut haec concinant? At iam decimum annum in spelunca iacet. Duo Reges: constructio interrete. Sed quid sentiat, non videtis. Aliter enim nosmet ipsos nosse non possumus. Quid turpius quam sapientis vitam ex insipientium sermone pendere? Piso, familiaris noster, et alia multa et hoc loco Stoicos irridebat: Quid enim?</p>
+
+</article>
+	
+</div>
+
+</body>
+</html>
