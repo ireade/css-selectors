@@ -13,23 +13,55 @@
 			position: relative;
 		}
 
-		*:lang(ar) {
-			font-family: "Traditional Arabic";
+
+
+		*:lang(de) {
+			border-left: 4px solid #FFCE00;
+			padding-left: 1rem;
 		}
 
-		*:lang(fr):before {
+		*:lang(de):before {
 			position: absolute;
 			top: 0;
-			left: -70px;
-			padding: 0.2rem 0.5rem; 
+			left: -55px;
+			width: 40px;
+			height: 40px;
+			text-align: center;
+			padding: 10px 0;
 
-			content: "French";
+			border-radius: 50%;
+			background-color: #FFCE00;
+			content: "DE";
+		}
 
-			font-style: italic;
 
-			/*transform: rotate(90deg);*/
 
-			background-color: beige;
+		blockquote:before {
+			content: open-quote;
+			padding-right: 1rem;
+		}
+
+		blockquote:after {
+			content: close-quote;
+			padding-left: 1rem;
+		}
+
+		blockquote:lang(fr) {
+			quotes: '«' '»';
+		}
+
+
+		blockquote:lang(zh-Hans) {
+			quotes: '「' '」';
+		}
+
+		em { font-style: italic; }
+
+		em:lang(ja) { 
+			font-style: normal; 
+			-webkit-text-emphasis-style: dot;
+			text-emphasis-style: dot;
+			text‑emphasis‑position: over right; 
 		}
 
 
@@ -42,17 +74,24 @@
 	
 
 <article>
+
+	<h3>Style</h3>
 	
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum id fugiunt, re eadem defendunt, quae Peripatetici, verba. Videsne, ut haec concinant? At iam decimum annum in spelunca iacet. Duo Reges: constructio interrete. Sed quid sentiat, non videtis. Aliter enim nosmet ipsos nosse non possumus. Quid turpius quam sapientis vitam ex insipientium sermone pendere? Piso, familiaris noster, et alia multa et hoc loco Stoicos irridebat: Quid enim?</p>
+	<p lang="de">Als sie fliehen konnte, in Wirklichkeit aber die selben Sie, die Dinge zu schützen, dass die Peripatetiker, die Worte des. Wie bewerten Sie diese zu singen? Aber jetzt schreibe das zehnte Jahr, in der Höhle des Feldes werden ausgeblendet. Die beiden Könige: der Bau des Internet. Aber was zu fühlen, sehen sie nicht. In einer anderen Art und Weise, um uns wissen, können wir nicht. Was eine Schande, als auf das Wort eines Narren ab: für das Leben der Teil eines klug? Piso, Freund von uns, und viele andere Dinge an diesem Ort, die Stoiker, auf den ersten, lachte und sagte: Was hat sie gesagt?</p>
 
 
-	<p lang="fr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum id fugiunt, re eadem defendunt, quae Peripatetici, verba. Videsne, ut haec concinant? At iam decimum annum in spelunca iacet. Duo Reges: constructio interrete. Sed quid sentiat, non videtis. Aliter enim nosmet ipsos nosse non possumus. Quid turpius quam sapientis vitam ex insipientium sermone pendere? Piso, familiaris noster, et alia multa et hoc loco Stoicos irridebat: Quid enim?</p>
+	<h3>Use Native Quotation Marks</h3>
 
 
-	<p lang="ar">اهلا وسهلا</p>
+	<blockquote lang="fr">Quand ils ne pouvaient fuir, mais en réalité la même chose pour vous, les choses protéger que les péripatéticiens, les mots de la. Chantez-vous comme ça? Mais écrire maintenant la dixième année, dans la caverne du champ sont cachés. Les deux rois: la construction de l'Internet. Mais quoi ressentir, voir pas. D'une autre manière, à nous connaître, nous ne pouvons pas. Quoi de plus honteux que de dépendre de la parole d'un fou: pour la vie de la part d'un sage? Pison, de nos amis, et bien d'autres choses dans ce lieu, les stoïciens, au premier abord, se moquaient, et disaient: Que dit-elle?</blockquote>
 
+	<blockquote lang="zh-Hans">當他們可以逃跑，但在現實中一樣保護你，這個事情的Peripatetics，的話。你喜歡唱歌嗎？但現在寫的第十個年頭，在該領域的洞穴是隱藏的。二王：互聯網的建設。但是覺得什麼，看到它沒有。以另一種方式，知己知彼，我們不能。還有什麼比更可恥依賴於一個傻瓜的話：對於一個明智的一部分的生活嗎？皮索，我們的朋友，在這個地方很多其他的事情，斯多葛學派，在第一，笑了，說，她說什麼.</blockquote>
 
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum id fugiunt, re eadem defendunt, quae Peripatetici, verba. Videsne, ut haec concinant? At iam decimum annum in spelunca iacet. Duo Reges: constructio interrete. Sed quid sentiat, non videtis. Aliter enim nosmet ipsos nosse non possumus. Quid turpius quam sapientis vitam ex insipientium sermone pendere? Piso, familiaris noster, et alia multa et hoc loco Stoicos irridebat: Quid enim?</p>
+	
+	<h3>Use a Preferred Font</h3>
+
+	<p lang="ja">これは<em>日本語</em>です</p>
+
 
 </article>
 	

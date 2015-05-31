@@ -9,12 +9,19 @@
 
 	<style>
 
-		.foo .bar {
-			background-color: yellow;
+		button {
+			margin-bottom: 2rem;
 		}
 
-		.foo:active + .bar {
-			background-color: pink;
+
+		.hidden {
+			display: none;
+			max-height: 80vh;
+			width: auto;
+		}
+
+		button:active + .hidden {
+			display: block;
 		}
 
 	</style>
@@ -23,12 +30,9 @@
 
 	<div class="container">
 
-		<div class="foo">
-			<a href="">Hello</a>
-		</div>
-		<div class="bar">
-			There!
-		</div>
+		<button>Click and Hold Me To Reveal</button>
+
+		<img src="img.jpg" alt="Albert Einstein" class="hidden">
 		
 	</div>
 

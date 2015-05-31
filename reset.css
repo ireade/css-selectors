@@ -68,16 +68,23 @@ html {
 
 body {
 	font-size: 1.6rem;
+	font-family: 'Helvetica Neue';
 	line-height: 1.4;
 	
 }
 
 .container {
-	margin: 2rem auto;
+	margin: 5rem auto;
 	width: 80%;
 }
 
-p {
+h3 {
+	font-weight: 700;
+	margin: 2rem 0 1rem;
+}
+
+p,
+blockquote {
 	margin: 1rem 0;
 }
 
